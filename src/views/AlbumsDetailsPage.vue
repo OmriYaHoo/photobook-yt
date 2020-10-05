@@ -17,7 +17,7 @@
             />
           </svg>
           <span class="mt-2 text-base leading-normal">Select a file</span>
-          <input @change="onFileChange" accept="image/*" type="file" class="hidden" />
+          <input @change="onFileChange" accept="image/*" type="file" class="hidden"/>
         </label>
       </form>
     </div>
@@ -82,7 +82,7 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style scoped>
 amplify-s3-image {
   --width: 75%;
 }

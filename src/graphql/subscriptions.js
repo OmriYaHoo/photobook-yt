@@ -155,7 +155,7 @@ export const onDeleteAlbum = /* GraphQL */ `
   }
 `;
 export const onCreatePhoto = /* GraphQL */ `
-  subscription OnCreatePhoto($owner: String) {
+  subscription OnCreatePhoto($owner: String!) {
     onCreatePhoto(owner: $owner) {
       id
       createdAt
@@ -228,7 +228,7 @@ export const onCreatePhoto = /* GraphQL */ `
   }
 `;
 export const onUpdatePhoto = /* GraphQL */ `
-  subscription OnUpdatePhoto($owner: String) {
+  subscription OnUpdatePhoto($owner: String!) {
     onUpdatePhoto(owner: $owner) {
       id
       createdAt
@@ -301,7 +301,7 @@ export const onUpdatePhoto = /* GraphQL */ `
   }
 `;
 export const onDeletePhoto = /* GraphQL */ `
-  subscription OnDeletePhoto($owner: String) {
+  subscription OnDeletePhoto($owner: String!) {
     onDeletePhoto(owner: $owner) {
       id
       createdAt
